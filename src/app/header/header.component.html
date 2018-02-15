@@ -1,0 +1,21 @@
+<div class="col-md-12 padding-free">
+  <ul>
+    <li><a routerLink=""><i class="fas fa-home"></i></a></li>
+    <li>
+      <div class="dropdown">
+        <button class="dropbtn">City</button>
+        <div class="dropdown-content" >
+          <a routerLink="citynews/{{city.name}}" *ngFor="let city of cities;let i = index">{{city.name}}</a>
+        </div>
+      </div>
+
+      <!-- <a routerLink="">City</a> -->
+    </li>
+    <li><a routerLink="">India</a></li>
+    <li><a routerLink="">World</a></li>
+    <li><a routerLink="">Business</a></li>
+    <li><a routerLink="">Entertainment</a></li>
+    <li><a routerLink="trial">Trial</a></li>
+    <li><a routerLink="about/48">About</a></li>
+  </ul>
+</div>

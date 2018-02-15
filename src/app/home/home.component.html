@@ -1,0 +1,76 @@
+<div class="container-fluid">
+  <div class="row" [@newses]="newses.length">
+    <div class="col-md-4">
+      <div class="clearfix" *ngFor="let news of newses; let i = index">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="col-md-12">
+              <h4>News title {{i+1}}</h4>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12 padding-free">
+              <div class="thumbnail">
+                <a href="/w3images/lights.jpg" target="_blank">
+                <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="clearfix" *ngFor="let news of newses; let i = index">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="col-md-12">
+              <h4>News title {{i+1}}</h4>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12 padding-free">
+              <div class="thumbnail">
+                <a href="/w3images/lights.jpg" target="_blank">
+                <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="clearfix" *ngFor="let news of newses; let i = index">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="col-md-12">
+              <h4>News title {{i+1}}</h4>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12 padding-free">
+              <div class="thumbnail">
+                <a href="/w3images/lights.jpg" target="_blank">
+                <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

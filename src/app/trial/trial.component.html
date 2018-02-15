@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" routerLink="">Home</li>
+    <li class="breadcrumb-item active">Trial</li>
+  </ol>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="col-md-12">
+        <h4>Trial Page</h4>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="col-md-12">
+        <div class="row" [@goals]="goals.length">
+          <div class="col-md-4">
+            <h5>Add Goals</h5>
+            <form class="">
+              <div class="input-group">
+                <input type="text" name="item" class="form-control" [(ngModel)]="goalText">
+                <button type="submit" class="btn btn-sm btn-success" name="button" (click)="addItem()">{{ btnText }}</button>
+              </div>
+              <br>
+              <p *ngIf="warningFlag" class="text-danger">please enter goal..!</p>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h5>Goals list ( {{ itemCount }} )</h5>
+            <table class="table table-bordered">
+              <tr *ngFor="let goal of goals; let i = index" (click)=removeItem(i)>
+                <td> <b>{{ i+1 }}</b> </td>
+                <td> <b>{{ goal }}</b> </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
